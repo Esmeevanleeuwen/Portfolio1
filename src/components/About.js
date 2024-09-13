@@ -19,18 +19,14 @@ class About extends React.Component {
   render() {
     const one = (
       <p>
-        I am currently a <b>Software Development Engineer</b> at
-        <a href="https://www.aboutamazon.com/"> Amazon</a>, working in the AWS
-        sector under team Route 53. At the same time, I am undertaking a
-        part-time <b> Master's of Science</b> in <b>Software Engineering </b>at{" "}
-        <a href="https://www.ox.ac.uk/about">University of Oxford</a>.
+        I am currently a <b>Software Development Engineer</b>  with a passion for solving complex problems through efficient and elegant code. My experience spans various technologies, from front-end frameworks like React to backend solutions in Java and Python. I love working on large-scale applications that require attention to both detail and performance.
       </p>
     );
     const two = (
       <p>
-        Outside of work, I'm interested in following the developments of
-        science. I also play a lot of video games. And make TikToks.
-      </p>
+        Outside of work, I enjoy expanding my knowledge, traveling, and continuously improving my technical skills. Whether mentoring others or exploring new technologies, I stay driven by my love for learning.
+
+</p>
     );
 
     const tech_stack = [
@@ -39,7 +35,7 @@ class About extends React.Component {
       "React.js",
       "Java",
       "Javascript ES6+",
-      "C#"
+      "PHP"
     ];
 
     return (
@@ -64,7 +60,7 @@ class About extends React.Component {
               {[two]}
             </div>
             <div className="about-image">
-              <img alt="Gazi Jarin" src={"/assets/me2.jpg"} />
+              <img alt="Esmee van Leeuwen" src={"/assets/me2.jpg"} />
             </div>
           </div>
         </FadeInSection>

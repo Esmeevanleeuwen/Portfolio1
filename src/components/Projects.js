@@ -2,8 +2,6 @@ import React from "react";
 import "../styles/Projects.css";
 import FolderOpenRoundedIcon from "@material-ui/icons/FolderOpenRounded";
 import FadeInSection from "./FadeInSection";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import Carousel from "react-bootstrap/Carousel";
 import ExternalLinks from "./ExternalLinks";
 
 class Projects extends React.Component {
@@ -15,91 +13,56 @@ class Projects extends React.Component {
     };
     this.handleSelect = this.handleSelect.bind(this);
   }
+
   handleSelect(eventKey) {
     this.setState({
       activeKey: eventKey
     });
   }
+
   render() {
-    const spotlightProjects = {
-      "No Man's Land": {
-        title: "no man's land",
-        desc:
-          "A third-person survival-mode game where you battle against time and space to return to Earth.",
-        techStack: "C# (UNITY)",
-        link: "https://github.com/slakh96/no-mans-land",
-        open: "https://gazijarin.itch.io/no-mans-land",
-        image: "/assets/nomansland.png"
-      },
-      Truth: {
-        title: "truth",
-        desc:
-          "A three.js simulation of the planet system revolving around a monolith.",
-        techStack: "JAVASCRIPT (THREE.JS)",
-        link: "https://github.com/gazijarin/truth",
-        open: "https://gazijarin.github.io/Truth/",
-        image: "/assets/truth.png"
-      },
-      "Tall Tales": {
-        title: "tall tales",
-        desc:
-          "A multi-player story-telling web game for 3-5 players. Its usage of sockets to allow for concurrent gameplay, connecting friends across the internet.",
-        techStack: "NODE.JS (SOCKET.IO), REACT.JS, MONGODB",
-        link: "https://github.com/gazijarin/TallTales",
-        open: "https://talltales.herokuapp.com/",
-        image: "/assets/talltales.png"
-      },
-      Portfolio: {
-        title: "portfolio.js",
-        desc:
-          "A small JS library that helps with clear and succinct data presentation.",
-        techStack: "NODE.JS (EXPRESS.JS)",
-        link: "https://github.com/gazijarin/Portfolio.js",
-        open: "https://afternoon-ocean-92382.herokuapp.com/",
-        image: "/assets/portfolio.png"
-      }
-    };
+    // Removed spotlightProjects object and Carousel component
+
     const projects = {
-      "TDSB Homework Management Interface": {
+      "Pokemon app": {
         desc:
-          "An application created for Toronto District School Board, with a Flask back-end and a Vue front-end.",
-        techStack: "Python (Flask), Vue.js, Bootstrap, SQL",
-        link: "https://github.com/gazijarin/TDSBHomeworkManagement",
-        open: "https://tdsb-app.herokuapp.com/"
+          "A React and GraphQL app for searching and viewing Pokémon details.",
+        techStack: "React.js, GraphQL",
+        link: "https://github.com/Esmeevanleeuwen/PokemonApp",
+        open: ""
       },
-      "Adam A.I.": {
+      "Virtual pet game": {
         desc:
-          "A self-learning A.I. that learns to traverse through a complex maze using the genetic algorithm.",
-        techStack: "Javascript, HTML / CSS",
-        link: "https://github.com/gazijarin/adamai",
-        open: "https://gazijarin.github.io/AdamAI/"
+          "A Java-based game where users care for a virtual pet. It uses object-oriented programming to handle actions and behavior, providing an interactive experience.",
+        techStack: "Java",
+        link: "https://github.com/Esmeevanleeuwen/virtual-pet",
+        open: ""
       },
-      "Distributed Logging and Monitoring System": {
+      "Recipes App": {
         desc:
-          "A system that establishes an ORM connection to a Prisma client in order to communicate logs from microservices.",
+          "A recipe search app that allows users to filter by dietary preferences and health needs. It integrates with the Edamam API to display nutritional and ingredient lists.",
         techStack: "Node.js (Express.js), React.js, PostgreSQL",
-        link:
-          "https://github.com/gazijarin/Distributed-Logging-and-Monitoring-System"
+        link: "https://github.com/Esmeevanleeuwen/Recipes-app"
       },
-      "Odin Bot": {
+      "Events App": {
         desc:
-          "A Telegram bot that helps you excel on your daily tasks through Node NLP.",
-        techStack: "Javascript, Node.js, Natural NLP, Telegram API",
-        link: "https://github.com/gazijarin/OdinBot",
+          "An event platform where users can browse, create, and filter events. It includes features like event registration and notifications, enhancing user convenience.",
+        techStack: "Javascript, Node.js, React.js, MongoDB",
+        link: "https://github.com/Esmeevanleeuwen/Eventspage",
         open: ""
       },
-      "Game Centre": {
+      "Weather App": {
         desc:
-          "An Android app consisting of three board games, including multiplayer, autosave, user authentication, etc.",
-        techStack: "Java, Android Studio",
-        link: "https://github.com/gazijarin/gamecentre",
+          "A Vue.js weather app delivering real-time data from the OpenWeather API.",
+        techStack: "Vue.js, API, Javascript",
+        link: "https://github.com/Esmeevanleeuwen/WeatherApp",
         open: ""
       },
-      "Minimax Stonehenge": {
+      "Instagram clone": {
         desc:
-          "Two-player, zero-sum game with a strategic Minimax artificial intelligence.",
-        techStack: "Python",
-        link: "https://github.com/gazijarin/stonehenge",
+          "A replica of Instagram built for training police in digital detection, featuring core functionalities such as posting, liking, and commenting.",
+        techStack: "Javascript, PHP",
+        link: "https://github.com/Esmeevanleeuwen/social-media",
         open: ""
       }
     };
@@ -109,32 +72,6 @@ class Projects extends React.Component {
         <div className="section-header ">
           <span className="section-title">/ pet projects</span>
         </div>
-        <Carousel>
-          {Object.keys(spotlightProjects).map((key, i) => (
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={spotlightProjects[key]["image"]}
-                alt={key}
-              />
-              <div className="caption-bg">
-                <Carousel.Caption>
-                  <h3>{spotlightProjects[key]["title"]}</h3>
-                  <p>
-                    {spotlightProjects[key]["desc"]}
-                    <p className="techStack">
-                      {spotlightProjects[key]["techStack"]}
-                    </p>
-                  </p>
-                  <ExternalLinks
-                    githubLink={spotlightProjects[key]["link"]}
-                    openLink={spotlightProjects[key]["open"]}
-                  ></ExternalLinks>
-                </Carousel.Caption>
-              </div>
-            </Carousel.Item>
-          ))}
-        </Carousel>
         <div className="project-container">
           <ul className="projects-grid">
             {Object.keys(projects).map((key, i) => (

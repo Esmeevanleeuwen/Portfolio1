@@ -82,53 +82,44 @@ const JobList = () => {
   const [value, setValue] = React.useState(0);
 
   const experienceItems = {
-    Amazon: {
+    "Winc Academy": {
       jobTitle: "Software Development Engineer @",
-      duration: "JUL 2022 - PRESENT",
+      duration: "Dec 2021 - Jun 2024",
       desc: [
-        "Led development of end-to-end region build automation across Route 53 (AWS's DNS web service).  This enabled the launch of customer-facing global services in new regions within a day, a significant reduction from the previous time-frame of a month.",
-        "Re-built Route 53's core domain management and DNS systems to provide a better user experience to millions of customers."
+        "At Winc, I’ve had the incredible opportunity to share my passion for React and front-end development with a diverse range of students. I teach live lessons on React, Python, and UX design, providing hands-on guidance and mentorship to help students grow their skills and build real-world applications.",
+        "The most rewarding part of my role is watching students develop confidence as they build their first projects and seeing how they progress. My goal is to make complex technical concepts accessible, while inspiring them to think creatively about solving problems with code."
       ]
     },
-    Wattpad: {
-      jobTitle: "Associate Engineer @",
-      duration: "MAY 2020 - APR 2021",
+    Voidmanager: {
+      jobTitle: "Senior Software engineer  @",
+      duration: "Jul 2021 - Nov 2023",
       desc: [
-        "Developed a responsive React web page (the new Story Details) from scratch, both on client and server side, for an app with massive scale (2 billion daily requests).",
-        "Iteratively built web experiences for 80 million users across high-traffic pages.",
-        "Collaborated with senior engineers and product management following best practices for the full software development life cycle, including coding standards, code reviews, source control management, build processes, testing, and operations."
+      "As a software developer at Voidmanager, I led the development of innovative automation tools that dramatically improved server setup efficiency, cutting down manual processes and optimizing workflows. My tools were pivotal in transforming how the team worked, reducing configuration time by over 50%, which allowed the team to focus on delivering quality to clients faster." ,
+      "Beyond technical development, I collaborated closely with stakeholders to understand their needs and delivered solutions tailored to those requirements. Every project was a new challenge to solve, and I embraced that excitement with a problem-solving mindset, always looking for ways to innovate and push boundaries." ]
+    },
+    "Ecoteers": {
+      jobTitle: "Web Analytics Developer  @",
+      duration: "Oct 2020 - Sep 2022",
+      desc: [
+        "In this role, I focused on developing and implementing digital strategies that maximized online visibility and user engagement. By leveraging advanced web analytics and performance optimization tools, I drove traffic growth and improved conversion rates by 30%.",
+        "My technical contributions included the creation of automated reports, integration of SEO tools, and performance tracking dashboards to provide actionable insights for stakeholders. This role required a blend of technical expertise and a deep understanding of digital trends, allowing me to craft tailored strategies for clients across various industries."
       ]
     },
-    "University of Toronto": {
-      jobTitle: "Research Engineer @",
-      duration: "MAY 2021 - SEPT 2021",
+    ByTommorow: {
+      jobTitle: "Frontend Developer  @",
+      duration: "Sep 2022 - Jun 2023",
       desc: [
-        "Developed and researched an NLP-based framework using state-of-the-art tools like Spacy and Stanza to facilitate the derivation of requirements from health data by leveraging syntactic dependencies, entity-recognition and rule-based match-making.",
-        " Application selected for DCS Research Award ($4,000) as part of the ”Visualizing Privacy Analysis Results” project led by Professor Marsha Chechik."
+        "My internship at ByTomorrow was focused on building and maintaining applications using Vue.js and PHP. I worked on developing a low-code platform, allowing users with minimal technical expertise to create websites easily.",
+        "Through this internship, I gained hands-on experience with test-driven development (TDD) and collaborated with cross-functional teams to deliver efficient, scalable solutions. This internship taught me the fundamentals of delivering quality software while balancing the technical and creative aspects of development."
       ]
     },
-    Centivizer: {
-      jobTitle: "Software Developer @",
-      duration: "SEPT 2019 - APR 2020",
-      desc: [
-        "Developed interactive and neural-activation technologies to stimulate physical and cognitive functions in order to slow the progression of neurodegenerative disorders.",
-        "Leveraged WebRTC to develop and maintain a Node.js online video-streaming platform in real-time competitive-mode games to research the effects of active stimulation for those suffering from dementia."
-      ]
-    },
-    // TDSB: {
-    //   jobTitle: "Software Engineer @",
-    //   duration: "SEPT 2019 - DEC 2020",
-    //   desc: [
-    //     "Co-developed homework management software integrable with Google Classroom by utilizing the Python’s Flask micro-framework for the back-end API and Vue.js for the front-end UI, in order to translate business requirements into a functional full-stack application."
-    //   ]
-    // },
-    "Orange Gate": {
+
+    Ixora: {
       jobTitle: "Software Developer Intern @",
       duration: "MAY 2019 - AUG 2019",
       desc: [
-        "Developed a Node.js smart home system through Facebook’s Messenger integrated with Bocco sensors and other smart devices (Nest camera, TPLink smart plugs) to derive conclusions about the current state of the home",
-        "Identified continuous improvements in data quality, design reports and coding activities, presenting results and findings to internal business stakeholders.",
-        "Relevant technologies/tools used: DialogFlow, Vision, AutoML, Messenger Bot API, MongoDB."
+       "During my internship at iXora, I was responsible for leading the development of a key interface for a data center project. This project not only allowed me to improve my coding skills but also to understand the importance of user-centric design and scalability in large-scale systems.",
+       "Working alongside seasoned engineers, I gained valuable experience in managing both front-end and back-end systems, ensuring the seamless integration of new features while optimizing performance and usability."
       ]
     }
   };

@@ -14,7 +14,7 @@
 
 1. Install the dependencies
 
-   ```sh
+   ```sha
    npm install or yarn
    ```
 
